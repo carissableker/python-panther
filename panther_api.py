@@ -1,7 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding: utf-8
 
-from __future__ import print_function
 import pandas as pd
 import os
 import sys
@@ -101,7 +100,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     result = panther_api_overrepresentation(args.inputfile, args.organism, args.annotation_option, args.test_type)
-    if not result == None:
+    if result is not None:
         result.to_csv(args.outputfile, sep='\t')
 
 

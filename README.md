@@ -8,6 +8,15 @@ See http://pantherdb.org/help/PANTHERhelp.jsp#V. for the PANTHER webservices ins
 
 ## Command-line usage: 
 
+Requires:
+
+* pandas
+* requests
+* bs4
+* html5lib
+
+
+
 ```
 usage: panther_api.py [-h] [--organism ORGANISM] [--test_type TEST_TYPE]
                       [--annotation_option ANNOTATION_OPTION]
